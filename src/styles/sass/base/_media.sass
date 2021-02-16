@@ -1,0 +1,65 @@
+@media ( max-width: 1000px )
+    .container
+        max-width: 850px !important
+
+@media ( max-width: 900px )
+    .container
+        max-width: 750px !important
+
+
+@media ( max-width: 768px )
+    .container
+        max-width: 700px !important
+    .header
+        &__logo
+            width: 200px
+        &__official
+            span
+                font-size: 16px !important
+    .promo
+        &__icon
+            font-size: 13px
+    .advantages
+        &__item
+            span
+                font-size: 16px
+            p
+                font-size: 12px
+    .sectionheader
+        font-size: 26px
+
+@media ( max-width: 414px )
+    .container
+        max-width: 300px !important
+    .header
+        flex-direction: column
+        align-items: center
+        &__logo
+            width: 250px
+            margin-bottom: 20px
+        &__official
+            margin-bottom: 40px
+            font-size: 17px
+            span
+                font-size: 19px
+        .button
+            display: none
+        &__phone
+            font-size: 28px
+    .promo
+        &__wrapper
+            text-align: right
+        &__icons
+            min-width: 100%
+    .advantages
+        &__list
+            flex-direction: column
+        &__item
+            span
+                font-size: 20px
+            p
+                font-size: 16px
+            &:not(:last-child)
+                margin-bottom: 30px
+    .sectionheader
+        font-size: 25px
