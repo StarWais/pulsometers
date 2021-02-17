@@ -35,12 +35,21 @@
         border: none
         color: #ffffff
 
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
 .item
     width: 300px
     height: 455px
     border: 2px solid #e8e8e8
     text-align: center
     padding: 20px 20px 27px 20px
+    display: flex
+    flex-direction: column
+    transition: 0.5s all
+    margin-bottom: 25px
     &__name
         color: #0d0d0d
         font-size: 16px
@@ -53,6 +62,9 @@
         margin-bottom: 8px
     &__expand
         color: red
+        text-transform: uppercase
+        text-decoration: underline
+        cursor: pointer
     &__underline
         width: 260px
         height: 1px
@@ -74,6 +86,25 @@
             justify-content: space-between
             text-align: left
             align-items: center
+    &__expanded
+        color: #555555;
+        font-family: $msc300
+        font-size: 14px;
+        text-align: left
+        height: 298px
+        list-style: none
+        padding-left: 18px
+        margin-bottom: 58px
+        li
+            &::before
+                content: "\2022";  
+                color: red; 
+                font-weight: bold; 
+                display: inline-block; 
+                width: 1em; 
+                margin-left: -1em;
+            &:not(:last-child)
+                margin-bottom: 10px
 
 
 
